@@ -38,11 +38,9 @@ public class Picture {
 
         public Map<String, Integer> countOfFigures() {
          for (int i = 0; i < list.size(); i++) {
-             map.put (list.get(i).getName(), i);
-                Integer count = 0;
+             Integer count = 0;
                 for (int j = 0; j < list.size(); j++) {
-                    map.put (list.get(j).getName(), j);
-                    if (list.get(j).getName().equals(list.get(i).getName())) {
+                   if (list.get(j).getName().equals(list.get(i).getName())) {
                         count += 1;
                     }
                 }
